@@ -25,4 +25,10 @@ collections:
               media_library:
                 config:
                   multiple: false
+            - label: "Testimonials"
+              name: "items"
+              widget: "list"
+              fields:
+                - {label: Title, name: title, widget: string, default: "Everything is awesome!"}
+                - {label: Description, name: desc, widget: string, default: "Everything is!"}
 
