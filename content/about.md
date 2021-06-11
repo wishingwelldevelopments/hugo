@@ -1,6 +1,5 @@
 ---
-title: ":~)"
-draft: false
-layout: "about"
-descritpion: "foobarbarfood"
+title: sdfsdf
+description: sdf
+layout: about
 ---
