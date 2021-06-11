@@ -5,10 +5,10 @@ bg: /img/mohammad-alizade-4wzruab-kws-unsplash.jpg
 showitems: true
 items:
   "0":
-    title: haahh
-    desc: fuck face
+    title: ebud
+    desc: bud bud
   "1":
-    title: that rude
-    desc: cant
+    title: fooy tooy bar
+    desc: eyyy
 ---
 notes go here
