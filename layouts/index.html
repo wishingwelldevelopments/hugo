@@ -11,14 +11,12 @@
             </div>
         </div>
         <div class="w-100 container mx-auto px-9">
-            {{ if .Params.showitems }}
             <ul>
                 {{ range .Params.items }}
                 <li>{{.title}}</li>
                 <li>{{.desc}}</li>
                 {{ end }}
             </ul>
-            {{ end }}
         </div>
     </body>
     {{ partial "footer.html" . }}
