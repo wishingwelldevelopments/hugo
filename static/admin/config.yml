@@ -3,6 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: static/img
 public_folder: /img
+logo_url: https://i.pinimg.com/474x/a0/a5/02/a0a5026df2484bcbbd52d203b893d39b.jpg
 collections:
   - label: "Pages"
     name: "pages"
