@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "header.html" . }}
+    <body>
+        <div class="w-100 c-header">
+            <div class="container mx-auto px-9 h-96">
+                <div class="relative flex h-full justify-center items-center flex-col">
+                    <h1 class="text-white text-5xl mb-4">{{ .Params.title }}</h1>
+                    <h2 class="text-white text-2xl">{{ .Params.desc }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 container mx-auto px-9">
+            {{ if .Params.showitems }}
+            <ul>
+                {{ range .Params.items }}
+                <li>{{.title}}</li>
+                <li>{{.desc}}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </body>
+    {{ partial "footer.html" . }}
+    <style>
+        .c-header{
+            background-image:url('{{ .Params.bg }}');
+            background-size:cover;
+            position:relative;
+        }
+        .c-header:before{
+            position:absolute;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:100%;
+            content: '';
+            background-color:rgba(0,0,0,0.6);
+        }
+    </style>
+</html>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

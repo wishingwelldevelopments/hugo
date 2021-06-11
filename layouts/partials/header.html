@@ -1,0 +1,17 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<header class="w-100 bg-black p-3">
+    <nav class="flex justify-between container mx-auto px-9">
+        <a href="{{ .Site.BaseURL }}" class="text-white">{{ .Site.Title }}</a>
+        <ul class="flex">
+            {{ range.Site.Menus.main }}
+                <li><a href="{{ .URL }}" class="text-white pl-3">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,10 @@
+baseURL = "https://mynewhugosite.com"
+relativeURLs = true
+title = "My New Hugo Site"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 1
